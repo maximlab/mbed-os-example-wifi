@@ -29,7 +29,7 @@ For more information about Wi-Fi APIs, please visit the [Mbed OS Wi-Fi](https://
 
    Edit ```mbed_app.json``` to include the correct Wi-Fi shield, SSID and password:
 
-```
+<pre><code>
 {
     "config": {
         "wifi-ssid": {
@@ -53,7 +53,7 @@ For more information about Wi-Fi APIs, please visit the [Mbed OS Wi-Fi](https://
         }
     }
 }
-```
+</code></pre>
 
 1. Compile and generate binary.
     For example, for `GCC`:

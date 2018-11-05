@@ -16,9 +16,9 @@
 
 #include "mbed.h"
 #include "TCPSocket.h"
-
 WiFiInterface *wifi;
-
+DigitalOut WifiEnable(PD_13);
+DigitalOut WifiRST(PD_12);
 const char *sec2str(nsapi_security_t sec)
 {
     switch (sec) {
@@ -126,7 +126,10 @@ void http_demo(NetworkInterface *net)
 int main()
 {
     int count = 0;
-
+    WifiEnable=1;
+    WifiRST=0;
+    wait(0.1);
+    WifiRST=1; 
     printf("WiFi example\n");
 
 #ifdef MBED_MAJOR_VERSION

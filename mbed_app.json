@@ -11,7 +11,13 @@
     },
     "target_overrides": {
         "*": {
-            "platform.stdio-convert-newlines": true
+            "platform.stdio-convert-newlines"   : true,
+            "esp8266.provide-default"           : true,
+            "drivers.uart-serial-rxbuf-size"    : 1024,
+            "drivers.uart-serial-txbuf-size"    : 1024,
+            "esp8266.rx"                        : "PB_7",
+            "esp8266.tx"                        : "PB_6",
+            "nsapi.default-wifi-security"       : "WPA_WPA2"
         }
     }
 }

@@ -13,8 +13,7 @@ For more information about Wi-Fi APIs, please visit the [Mbed OS Wi-Fi](https://
 ### Supported hardware ###
 
 * All Mbed OS boards with build-in Wi-Fi module:
-* Boards with external WiFi shields.
-    * Modular-2 with ESP-12F(esp8266) module using pins PB_6(tx) and PB_7(rx). 
+* Boards with external WiFi shields, Modular-2 with ESP-12F(esp8266) module using pins PB_6(tx) and PB_7(rx). 
 
 ##  Getting started ##
 
@@ -28,7 +27,6 @@ For more information about Wi-Fi APIs, please visit the [Mbed OS Wi-Fi](https://
 1. Configure the Wi-Fi shield and settings.
 
    Edit ```mbed_app.json``` to include the correct Wi-Fi shield, SSID and password:
-
 <pre><code>
 {
     "config": {
